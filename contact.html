@@ -13,7 +13,6 @@
     <script type="text/javascript">
         (function(){
             emailjs.init("HW44J_sLiyUaRMCWM");
-            emailjs.send("default_service", "rydbergs-atelje", {name: "Aron", notes: "This project that I want is..."});
         })();
     </script>
 </head>
@@ -63,9 +62,9 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form action="">
+                    <form onsubmit="return sendMail(this)">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
-                        <input type="text" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
+                        <input type="text" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required>
                         <textarea name="projectsummary" id="projectsummary" class="form-control" rows="5" 
                         placeholder="project description"></textarea>
                         <div class="row text-center">
@@ -142,5 +141,6 @@
         </div>
         
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 </html>
