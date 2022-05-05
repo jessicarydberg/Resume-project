@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/github-styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/github-information.js"></script>
     <title>Rosie</title>
@@ -52,15 +53,15 @@
     </header>
     <section class="container-fluid">
         <div class="row bg-color-contact">
-            <div>
+            <div class="col">
                 <h3 class="contact-heading uppercase text-center">View My GitHub Projects:</h3>
                 <h5 class="uppercase text-center">(or change the username to search for other user profiles)</h5>
-            </div>
-
-            <div class="center-form">
-                <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()">
-                <div id="gh-user-data" class="clearfix"></div>
-                <div id="gh-repo-data" class="clearfix"></div>
+                
+                <div class="center-form">
+                    <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()">
+                    <div id="gh-user-data" class="clearfix"></div>
+                    <div id="gh-repo-data" class="clearfix"></div>
+                </div>
             </div>
         </div>
     </section>
